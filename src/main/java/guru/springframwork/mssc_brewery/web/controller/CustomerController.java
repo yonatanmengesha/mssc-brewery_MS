@@ -19,6 +19,7 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
+
     @GetMapping({"/{customerId}"})
     public ResponseEntity<CustomerDto>  getCustomerById(@PathVariable UUID customerId){
 
