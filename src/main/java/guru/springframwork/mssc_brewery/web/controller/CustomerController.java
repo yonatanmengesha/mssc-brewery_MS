@@ -67,6 +67,5 @@ public class CustomerController {
         });
 
         return new ResponseEntity<>(errors,HttpStatus.BAD_REQUEST);
-
     }
 }
