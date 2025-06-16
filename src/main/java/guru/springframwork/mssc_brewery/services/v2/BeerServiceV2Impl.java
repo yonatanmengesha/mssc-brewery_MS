@@ -10,6 +10,7 @@ import java.util.UUID;
 @Slf4j
 @Service
 public class BeerServiceV2Impl implements BeerServiceV2 {
+
     @Override
     public BeerDtoV2 getBeerById(UUID beerId) {
         return BeerDtoV2.builder()
