@@ -13,6 +13,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class Beer {
+
     private UUID id;
     private String beerName;
     private BeerStyleEnum beerStyleEnum;
