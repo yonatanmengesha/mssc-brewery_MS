@@ -1,4 +1,4 @@
-package guru.springframwork.mssc_brewery;
+package guru.springframework.mssc_brewery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

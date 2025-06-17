@@ -1,4 +1,4 @@
-package guru.springframwork.mssc_brewery.web.model;
+package guru.springframework.mssc_brewery.web.model;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

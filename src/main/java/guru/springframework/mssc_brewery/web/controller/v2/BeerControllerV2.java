@@ -1,19 +1,18 @@
-package guru.springframwork.mssc_brewery.web.controller.v2;
+package guru.springframework.mssc_brewery.web.controller.v2;
 
-import guru.springframwork.mssc_brewery.services.v2.BeerServiceV2;
-import guru.springframwork.mssc_brewery.web.model.BeerDto;
-import guru.springframwork.mssc_brewery.web.model.v2.BeerDtoV2;
-import jakarta.validation.ConstraintViolationException;
+import guru.springframework.mssc_brewery.services.v2.BeerServiceV2;
+import guru.springframework.mssc_brewery.web.model.v2.BeerDtoV2;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import lombok.val;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.UUID;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/v2/beer")
 public class BeerControllerV2 {
@@ -21,9 +20,7 @@ public class BeerControllerV2 {
     private final BeerServiceV2 beerServiceV2;
 
 
-    public BeerControllerV2(BeerServiceV2 beerServiceV2) {
-        this.beerServiceV2 = beerServiceV2;
-    }
+
 
     @GetMapping("/{beerId}")
     public ResponseEntity<BeerDtoV2> getBeer(@PathVariable UUID beerId){
@@ -34,8 +31,8 @@ public class BeerControllerV2 {
     @PostMapping
     public ResponseEntity handlePost(@Valid @RequestBody BeerDtoV2 beerDtoV2){
 
-        BeerDtoV2 savedDtoV2 = beerServiceV2.saveNewBeer(beerDtoV2);
-        HttpHeaders headers = new HttpHeaders();
+        val savedDtoV2 = beerServiceV2.saveNewBeer(beerDtoV2);
+        val headers = new HttpHeaders();
         headers.add("Location","/api/v2/beer/"+savedDtoV2.getId().toString());
         return new ResponseEntity(headers,HttpStatus.CREATED);
     }

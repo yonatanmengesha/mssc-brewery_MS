@@ -1,7 +1,7 @@
-package guru.springframwork.mssc_brewery.web.controller;
+package guru.springframework.mssc_brewery.web.controller;
 
-import guru.springframwork.mssc_brewery.services.BeerService;
-import guru.springframwork.mssc_brewery.web.model.BeerDto;
+import guru.springframework.mssc_brewery.services.BeerService;
+import guru.springframework.mssc_brewery.web.model.BeerDto;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

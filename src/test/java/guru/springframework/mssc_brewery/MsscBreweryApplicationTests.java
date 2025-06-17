@@ -1,4 +1,4 @@
-package guru.springframwork.mssc_brewery;
+package guru.springframework.mssc_brewery;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

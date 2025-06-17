@@ -1,6 +1,6 @@
-package guru.springframwork.mssc_brewery.services;
+package guru.springframework.mssc_brewery.services;
 
-import guru.springframwork.mssc_brewery.web.model.BeerDto;
+import guru.springframework.mssc_brewery.web.model.BeerDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

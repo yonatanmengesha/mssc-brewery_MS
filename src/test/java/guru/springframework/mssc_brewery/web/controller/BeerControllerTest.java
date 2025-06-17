@@ -1,9 +1,8 @@
-package guru.springframwork.mssc_brewery.web.controller;
+package guru.springframework.mssc_brewery.web.controller;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import guru.springframwork.mssc_brewery.services.BeerService;
-import guru.springframwork.mssc_brewery.web.model.BeerDto;
+import guru.springframework.mssc_brewery.services.BeerService;
+import guru.springframework.mssc_brewery.web.model.BeerDto;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,7 +16,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import java.util.UUID;
 
 
-import static org.junit.Assert.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.hamcrest.core.Is.is;
