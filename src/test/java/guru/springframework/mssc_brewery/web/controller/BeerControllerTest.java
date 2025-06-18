@@ -3,6 +3,7 @@ package guru.springframework.mssc_brewery.web.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import guru.springframework.mssc_brewery.services.BeerService;
 import guru.springframework.mssc_brewery.web.model.BeerDto;
+import guru.springframework.mssc_brewery.web.model.v2.BeerStyleEnum;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
